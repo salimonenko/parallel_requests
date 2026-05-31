@@ -25,7 +25,9 @@ array('param1' => 'value1', 'param2' => 'value2'),
 array('param3' => 'value3', 'param4' => 'value4')
 
 Т.е. параллельно будут вызваны следующие URL:
+
 /TEST/parallel_requests/p0.php?param1=value1&param2=value2
+
 /TEST/parallel_requests/p1.php?param3=value3&param4=value4
 
 Вызовы (запуски) этих URL осуществляются при помоще сокетов PHP (аналог сокетов из языка С). 
