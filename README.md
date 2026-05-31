@@ -5,7 +5,9 @@ array('param1' => 'value1', 'param2' => 'value2'),
 array('param3' => 'value3', 'param4' => 'value4')
 
 That is, The following URLs will be called in parallel:
+
 /TEST/parallel_requests/p0.php?param1=value1&param2=value2
+
 /TEST/parallel_requests/p1.php?param3=value3&param4=value4
 
 These URLs are called (launched) using PHP sockets (similar to sockets in the C language).
@@ -17,7 +19,9 @@ These URLs are called (launched) using PHP sockets (similar to sockets in the C 
 '/TEST/parallel_requests/p0.php', 
 '/TEST/parallel_requests/p1.php'. 
 Они будут вызываться с POST-параметрами, соответственно: 
+
 array('param1' => 'value1', 'param2' => 'value2'), 
+
 array('param3' => 'value3', 'param4' => 'value4')
 
 Т.е. параллельно будут вызваны следующие URL:
